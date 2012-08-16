@@ -1,0 +1,8 @@
+*.swp
+*.dll
+*.exe
+bin/
+obj/
+*.pidb
+*.userprefs
+*.db

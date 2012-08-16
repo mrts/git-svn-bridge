@@ -1,0 +1,65 @@
+=>
+trap successful
+----------------------------------------------
+______________________________________________
+
+Synchronizing repo '/home/git-svn-bridge/git/git-svn-bridge-trunk'
+Start: Thu Aug 16 23:05:00 EEST 2012
+......................................
+
+=>
+git svn fetch --use-log-author successful
+----------------------------------------------
+Already on 'master'
+=>
+git checkout master successful
+----------------------------------------------
+From ../git-central-repo-trunk
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+=>
+git pull --rebase git-central-repo master successful
+----------------------------------------------
+Note: checking out 'svn/git-svn'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at 0cedfba... 2012-08-16 22:26:28 +0300 | Use template filters to represent amounts in localized format  [cecilia] 2012-08-16 22:26:28 +0300 | Use template tag library for localized date format  [cecilia] 2012-08-16 22:26:28 +0300 | Add template tag library  [cecilia] 2012-08-16 19:55:40 +0300 | Update main.cpp  [Git-SVN Bridge (GIT SIDE)]
+=>
+git checkout svn/git-svn successful
+----------------------------------------------
+Already up-to-date.
+=>
+git merge --no-ff --no-commit master successful
+----------------------------------------------
+# Not currently on any branch.
+nothing to commit (working directory clean)
+=>
+git commit --author bob@company.com <bob@company.com@9d7064fb-1ce7-4bd5-a3a5-21923fa238fa> -am <<pretty log>> successful
+----------------------------------------------
+Committing to file:///home/git-svn-bridge/svn/svn-repo/trunk ...
+=>
+git svn dcommit successful
+----------------------------------------------
+Switched to branch 'master'
+=>
+git checkout master successful
+----------------------------------------------
+Already up-to-date.
+=>
+git merge svn/git-svn successful
+----------------------------------------------
+Everything up-to-date
+=>
+git push git-central-repo successful
+----------------------------------------------
+End: Thu Aug 16 23:05:01 EEST 2012
+______________________________________________
+

@@ -1,0 +1,24 @@
+From: ---@gmail.com
+To:   ---@gmail.com
+Subject: [git-svn-auth-manager] SVN ACCESS ERROR
+
+Hi John Doe!
+
+An error occurred while accessing SVN with your credentials.
+Either your credentials are wrong or the SVN repository is down.
+
+If your password has changed, then please update it with
+
+ git-svn-auth-manager --change-passwd-for john
+
+in the git-svn bridge host or ask for help from the person who manages it.
+
+Details:
+--------------------------------------------------------------------------
+Error executing `svn info --username "john" --password "*****" "/tmp"`:
+svn: '/tmp' is not a working copy
+
+--------------------------------------------------------------------------
+
+Best,
+git-svn-auth-manager
