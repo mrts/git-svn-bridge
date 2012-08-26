@@ -5,16 +5,13 @@ It should be quite obvious to GitHub users why our team likes *git* - we
 branch, diff, merge and rebase heavily, work offline, stash, amend commits and
 do other *git*-specific things that make *git* so fun and useful.
 
-However, our corporate standard is *Subversion*. This is good -
-*Subversion* is simple and reliable, the history is immutable and the
-central repository lives in the secure datacenter. Project managers and
-salespeople can use *TortoiseSVN* to access the project repository as
-well, keeping project documents neatly organized alongside source
-repositories; administrators have easy tools for managing authorization
-and authentication etc. Everyone is generally happy with it. It's also
-good for us - if we mess up our team *git* repository with wild
-configuration experiments or history rewriting, we have a single
-canonical source of pristine history where we can roll back to.
+However, our corporate standard is *Subversion*. It is simple and
+reliable, the history is immutable and the central repository lives in the
+secure datacenter. Project managers and salespeople can use *TortoiseSVN* to
+access the project repository as well, keeping project documents neatly
+organized alongside source repositories; administrators have easy tools for
+managing authorization and authentication etc. Everyone is generally happy with
+it.
 
 To reap the best of both worlds, we have setup a *git*-*Subversion*
 bridge that synchronizes changes between our team *git* repository and
