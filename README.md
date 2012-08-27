@@ -37,9 +37,11 @@ Overview and caveats
 --------------------
 
 -   Each update of *master* in the central *git* repository will trigger
-    synchronization with *Subversion*. Additionally, there is a *cron*
-    job that runs the synchronization every *n* minutes (so that the
-    repository is updated even if there are no commits at *git* side).
+    synchronization with *Subversion*. Additionally, there is a *cron* job that
+    runs the synchronization every *n* minutes (so that the repository is
+    updated even if there are no commits at *git* side). Concurrent
+    synchronization is properly guarded with a lock in the bundled
+    synchronization script.
 
 -   There is no exchange of branches between *git* and *Subversion*. The
     *git* side tracks the trunk or any other main *Subversion* branch.
