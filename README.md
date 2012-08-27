@@ -421,7 +421,7 @@ Start by cloning this repository:
 
 Install required libraries and tools:
 
-    $ sudo apt-get install build-essential mono-devel libssl-dev
+    $ sudo apt-get install build-essential mono-devel libssl-dev tcl
 
 Change the encryption key:
 
