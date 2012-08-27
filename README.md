@@ -50,8 +50,11 @@ Overview and caveats
     repositories are used for tracking other long-lived *Subversion*
     branches.
 
--   As *Subversion* history is linear, *git* merge commits will be
-    squashed into a single commit (see examples below).
+-   As *Subversion* history is linear, *git* merge commits will be squashed
+    into a single commit (see examples below). For us this is no problem as,
+    in the spirit of continous integration, we consider the task branches to
+    be lightweight, ephemeral "units of work" that can go to mainline in a
+    single chunk and as the branch history is retained in *git*.
 
 -   To properly set author information in commits between *git* and
     *Subversion*, *Subversion* user passwords need to be available to
