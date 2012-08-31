@@ -52,7 +52,7 @@ Overview and caveats
 
 -   As *Subversion* history is linear, *git* merge commits will be squashed
     into a single commit (see examples below). For us this is no problem as,
-    in the spirit of continous integration, we consider the task branches to
+    in the spirit of continuous integration, we consider the task branches to
     be lightweight, ephemeral "units of work" that can go to mainline in a
     single chunk and as the branch history is retained in *git*.
 
