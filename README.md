@@ -417,6 +417,10 @@ Start by cloning this repository:
     $ cd ~/git
     $ git clone --recursive git://github.com/mrts/git-svn-bridge.git github-git-svn-bridge-utils
 
+**Warning to Ubuntu 16.04 users**|
+----------------------------------
+The versions of *Mono* and *Git* provided in Ubuntu 16.04 cause problems as described below, please use [latest *Mono*](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives) and [*Git*](https://launchpad.net/~git-core/+archive/ubuntu/ppa) if you run into problems.|
+
 #### git-svn-auth-manager
 
 Install required libraries and tools:
@@ -481,6 +485,10 @@ Verify that it works:
                                  Reset SVN auth cache with user's credentials;
                                    option argument is user's email; SVN URL
                                    required as non-option argument
+
+**Note**|
+----------------------------------
+If `~/bin/git-svn-auth-manager` crashes, then this is caused by *Mono* problems, please update *Mono* as described above|
 
 Secure the key - as encryption key is embedded in
 `git-svn-auth-manager`, it needs to be owned by root and be made
@@ -569,6 +577,10 @@ And test it all:
     Unpacking objects: 100% (4/4), done.
     To /home/git-svn-bridge/git/git-central-repo-trunk.git
        001c5c9..0c6e72a  master -> master
+
+**Note**|
+----------------------------------
+If you see *Not a git repository* errors during push, then this is caused by problems with some versions of *Git*, please update *Git* as described above|
 
 We are done with the setup now and will proceed with semi-realistic
 virtual developer testing in the next section.
