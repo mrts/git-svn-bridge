@@ -486,9 +486,9 @@ Verify that it works:
                                    option argument is user's email; SVN URL
                                    required as non-option argument
 
-**Note**|
-----------------------------------
-If `~/bin/git-svn-auth-manager` crashes, then this is caused by *Mono* problems, please update *Mono* as described above|
+|**Note**|
+|--------|
+|If `~/bin/git-svn-auth-manager` crashes, then this is caused by *Mono* problems, please update *Mono* as described above|
 
 Secure the key - as encryption key is embedded in
 `git-svn-auth-manager`, it needs to be owned by root and be made
@@ -578,9 +578,9 @@ And test it all:
     To /home/git-svn-bridge/git/git-central-repo-trunk.git
        001c5c9..0c6e72a  master -> master
 
-**Note**|
-----------------------------------
-If you see *Not a git repository* errors during push, then this is caused by problems with some versions of *Git*, please update *Git* as described above|
+|**Note**|
+|--------|
+|If you see *Not a git repository* errors during push, then this is caused by problems with some versions of *Git*, please update *Git* as described above|
 
 We are done with the setup now and will proceed with semi-realistic
 virtual developer testing in the next section.
