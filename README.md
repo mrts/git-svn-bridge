@@ -417,9 +417,9 @@ Start by cloning this repository:
     $ cd ~/git
     $ git clone --recursive git://github.com/mrts/git-svn-bridge.git github-git-svn-bridge-utils
 
-**Warning to Ubuntu 16.04 users**|
-----------------------------------
-The versions of *Mono* and *Git* provided in Ubuntu 16.04 cause problems as described below, please use [latest *Mono*](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives) and [*Git*](https://launchpad.net/~git-core/+archive/ubuntu/ppa) if you run into problems.|
+|**Warning to Ubuntu 16.04 users**|
+|---------------------------------|
+|The versions of *Mono* and *Git* provided in Ubuntu 16.04 cause problems as described below, please use [latest *Mono*](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives) and [*Git*](https://launchpad.net/~git-core/+archive/ubuntu/ppa) if you run into problems.|
 
 #### git-svn-auth-manager
 
