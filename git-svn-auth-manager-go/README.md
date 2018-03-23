@@ -48,17 +48,19 @@ Building
 
 As this software is written in golang you can run:
 ```
-go get github.com/bmanojlovic/git-svn-bridge/tree/master/git-svn-auth-manager
+go get github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go
 ```
 
-**Change key**, build:
+As step above already build package with default key please do re-build again with steps bellow
+
+**Change key**, build and install:
 
 ```
- $ cd git-svn-bridge/git-svn-auth-manager/GitSvnAuthManager
+ $ cd ~/go/src/github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go
  $ ENCRYPTION_KEY=`tr -dc '[:alnum:]' < /dev/urandom | head -c 32`
  $ sed -i "s/@KEY000000000000000000000000KEY@/$ENCRYPTION_KEY/" encryption/encryption.go
- $ make
- $ cp git-svn-auth-manager ~/bin/git-svn-auth-manager
+ $ make # or go build
+ $ cp git-svn-auth-manager-go ~/bin/git-svn-auth-manager
  ```
 
 
@@ -118,8 +120,8 @@ Configuration settings (from `git-svn-auth-manager -h`):
                 (default: true, i.e. certificate is NOT checked)
 
 
-See config_full.yml-full for a full sample or
-config_full.yml-sensible for enabling mail sending (other settings
+See config_full.yml for a full sample or
+config_sensible.yml for enabling mail sending (other settings
 can be left to defaults if GMail is used).
 
 Mail sending
