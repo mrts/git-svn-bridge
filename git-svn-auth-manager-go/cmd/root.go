@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	db "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager/db"
-	utils "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager/utils"
+	db "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go/db"
+	utils "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go/utils"
 	homedir "github.com/mitchellh/go-homedir"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

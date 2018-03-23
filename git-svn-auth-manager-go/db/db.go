@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"strings"
 
-	enc "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager/encryption"
+	enc "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go/encryption"
 	log "github.com/sirupsen/logrus"
 
 	_ "github.com/mattn/go-sqlite3" //sqlite3 importing into main namespace

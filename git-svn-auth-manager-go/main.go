@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager/cmd"
+import "github.com/bmanojlovic/git-svn-bridge/git-svn-auth-manager-go/cmd"
 
 func main() {
 	cmd.Execute()
