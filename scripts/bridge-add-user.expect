@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+set timeout -1
+
+set username [lindex $argv 0];
+set password [lindex $argv 1];
+set name [lindex $argv 2];
+set email [lindex $argv 3];
+
+spawn git-svn-auth-manager -a $username
+match_max 100000
+expect  "Enter Name and Lastname: "
+send -- "$name\r"
+expect "Enter Email: "
+send -- "$email\r"
+expect "Enter Password: "
+send -- "$password\r"
+expect "Verify Password: "
+send -- "$password\r"
+expect eof

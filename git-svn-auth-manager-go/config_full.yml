@@ -1,0 +1,13 @@
+configuration: 
+    appSettings: 
+        svn_auth_dir: "/home/git-svn-bridge/.subversion/auth"
+        db_filename: "/home/git-svn-bridge/.config/git-svn-auth-manager/userinfo.db"
+        do_not_check_server_certificate: true
+        mail_sending_enabled: false
+        smtp_username: "username@gmail.com"
+        smtp_password: "password"
+        smtp_server_host: "smtp.gmail.com"
+        smtp_server_port: 587
+        mail_from: "username@gmail.com"
+        mail_subject: "[git-svn-auth-manager] SVN ACCESS ERROR"
+        mail_body: "Hi {0}! \nAn error occurred while accessing SVN with your credentials. Either your credentials are wrong or the SVN repository is down. If your password has changed, then please update it with \n{1} --change-passwd-for {2} \nin the git-svn bridge host or ask for help from the person who manages it. \nDetails: \n--- \n{3} \n--- \nBest, {1}"
