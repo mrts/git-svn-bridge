@@ -86,6 +86,8 @@ func initConfig() {
 		// Search config in home directory with name "config" (without extension).
 		// viper.AddConfigPath(home)
 		viper.AddConfigPath(home + "/.config/git-svn-auth-manager/")
+		// if installed globally on system
+		viper.AddConfigPath("/etc/git-svn-auth-manager/")
 		viper.SetConfigName("config")
 	}
 	viper.SetConfigType("yaml")
