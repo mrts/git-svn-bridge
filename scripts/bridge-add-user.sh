@@ -6,6 +6,6 @@ while read line; do
 		export P="$(echo $line|cut -d: -f2)"
 		export N="$(echo $line|cut -d: -f3)"
 		export E="$(echo $line|cut -d: -f4)"
-		./bridge-add-user.expect "$U" "$P" "$N" "$E"
+		bridge-add-user.expect "$U" "$P" "$N" "$E"
 	fi
 done < user-list.txt

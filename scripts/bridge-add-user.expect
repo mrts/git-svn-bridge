@@ -6,7 +6,7 @@ set password [lindex $argv 1];
 set name [lindex $argv 2];
 set email [lindex $argv 3];
 
-spawn ./bin/git-svn-auth-manager -a $username
+spawn git-svn-auth-manager -a $username
 match_max 100000
 expect  "Enter Name and Lastname: "
 send -- "$name\r"
